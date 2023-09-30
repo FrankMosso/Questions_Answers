@@ -72,14 +72,14 @@ namespace QuestionsCodeFirstApi.Controllers
             return Ok(true);
         }
         /// <summary>
-        /// Endpoint to retrive questions data By Criteri
+        /// Endpoint to retrive questions data By Criterial
         /// Querying questions by tags.
         /// Retrieving question details along with answers.
         /// </summary>
         /// <param name="searchCriterial">Criteria</param>
         /// <returns>List<QuestionEntity></returns>
         [HttpPost]
-        [Route("QuestionByTags")]
+        [Route("QuestionsByCriteria")]
         public IActionResult GetQuestionByCriterial(SearchCriterial searchCriterial)
         {
             try
