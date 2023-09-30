@@ -10,6 +10,9 @@ namespace Question.Business.Interface
 {
     public interface IQuestionLogic
     {
-        List<QuestionEntity> GetQuestionByTags(SearchCriterial searchCriterial);
+        ResponseEntity<List<QuestionEntity>> GetQuestionByCriterial(SearchCriterial searchCriterial);
+        ResponseEntity<bool> Add(QuestionEntity question);
+        ResponseEntity<bool> AddAnswer(AnswerEntity answer);
+
     }
 }
